@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<HBox fx:id="child_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pers.gobang.view.child.game.CGameController">
+    <VBox fx:id="game_info_pane" alignment="TOP_CENTER" prefHeight="1080.0" prefWidth="478.0">
+        <HBox fx:id="timer_pane" alignment="CENTER" prefHeight="182.0" prefWidth="478.0">
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="100.0"/>
+            </VBox.margin>
+            <Text fx:id="timer" styleClass="text_pane" text="00:00"/>
+        </HBox>
+        <AnchorPane fx:id="score_pane" prefHeight="389.0" prefWidth="478.0">
+            <VBox.margin>
+                <Insets left="15.0" right="15.0"/>
+            </VBox.margin>
+            <Text fx:id="black_score" styleClass="text_pane" text="0" AnchorPane.bottomAnchor="105.0"
+                  AnchorPane.leftAnchor="60.0"/>
+            <Text fx:id="white_score" styleClass="text_pane" text="0" AnchorPane.bottomAnchor="105.0"
+                  AnchorPane.rightAnchor="70.0"/>
+            <Text fx:id="play_one" styleClass="text_pane" AnchorPane.leftAnchor="35.0"
+                  AnchorPane.topAnchor="75.0"/>
+            <Text fx:id="play_two" styleClass="text_pane" AnchorPane.rightAnchor="40.0"
+                  AnchorPane.topAnchor="75.0"/>
+        </AnchorPane>
+    </VBox>
+    <Pane fx:id="chessBoard_pane" prefHeight="1080.0" prefWidth="1020.0">
+        <HBox.margin>
+            <Insets/>
+        </HBox.margin>
+    </Pane>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+        <VBox fx:id="button_pane" alignment="TOP_CENTER" prefWidth="422.0">
+            <Button fx:id="startGame" mnemonicParsing="false" onAction="#startGameButton" prefHeight="79.0"
+                    prefWidth="253.0" styleClass="child_button" text="开始游戏">
+                <VBox.margin>
+                    <Insets top="120.0"/>
+                </VBox.margin>
+            </Button>
+            <Button fx:id="pauseGame" mnemonicParsing="false" onAction="#pauseGameButton" prefHeight="79.0"
+                    prefWidth="253.0" styleClass="child_button" text="暂停游戏">
+                <VBox.margin>
+                    <Insets top="40.0"/>
+                </VBox.margin>
+            </Button>
+            <Button fx:id="resetGame" mnemonicParsing="false" onAction="#resetGameButton" prefHeight="79.0"
+                    prefWidth="253.0" styleClass="child_button" text="重新开始">
+                <VBox.margin>
+                    <Insets top="40.0"/>
+                </VBox.margin>
+            </Button>
+            <Button fx:id="deleteGame" mnemonicParsing="false" onAction="#deleteGameButton" prefHeight="79.0"
+                    prefWidth="253.0" styleClass="child_button" text="悔棋">
+                <VBox.margin>
+                    <Insets top="40.0"/>
+                </VBox.margin>
+            </Button>
+        </VBox>
+        <VBox alignment="BOTTOM_CENTER" prefHeight="420.0" prefWidth="422.0" AnchorPane.bottomAnchor="0.0">
+            <Button fx:id="gotoAdult" mnemonicParsing="false" onAction="#gotoAdult" prefHeight="79.0" prefWidth="253.0" styleClass="child_button" text="切换至成人模式">
+                <VBox.margin>
+                    <Insets bottom="100.0"/>
+                </VBox.margin>
+            </Button>
+        </VBox>
+    </AnchorPane>
+</HBox>

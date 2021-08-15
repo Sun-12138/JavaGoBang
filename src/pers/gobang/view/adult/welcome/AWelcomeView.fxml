@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:id="adult_pane" alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="pers.gobang.view.adult.welcome.AWelcomeController">
+    <Button fx:id="adult_Button_StartGame" mnemonicParsing="false" onAction="#adult_Button_StartGame" prefHeight="142.0"
+            prefWidth="450.0" text="开始游戏">
+        <VBox.margin>
+            <Insets bottom="200.0" left="150.0"/>
+        </VBox.margin>
+    </Button>
+</VBox>

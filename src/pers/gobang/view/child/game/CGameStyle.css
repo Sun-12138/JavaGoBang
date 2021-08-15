@@ -1,0 +1,97 @@
+#child_pane {
+     -fx-background-image: url(file:res/image/child_game_background.png);
+     -fx-background-position:center center;
+     -fx-background-repeat:stretch;
+     -fx-background-color:transparent;
+}
+.child_button {
+      -fx-background-image: url(file:res/image/child_button_background.png);
+      -fx-background-position:center center;
+      -fx-background-repeat:stretch;
+      -fx-background-color:transparent;
+      -fx-effect: dropshadow(three-pass-box, #ffffff, 10.0,0, 0, 0);
+      -fx-font-size: 30px;
+      -fx-font-family: "宋体";
+}
+.child_button:hover {
+       -fx-background-image: url(file:res/image/child_button_background.png);
+       -fx-background-position:center center;
+       -fx-background-repeat:stretch;
+       -fx-background-color:transparent;
+       -fx-effect: dropshadow(three-pass-box, #72b9da, 10.0,0, 0, 0);
+       -fx-font-size: 30px;
+       -fx-font-family: "宋体";
+}
+.child_button:pressed {
+       -fx-background-image: url(file:res/image/child_button_background.png);
+       -fx-background-position:center center;
+       -fx-background-repeat:stretch;
+       -fx-background-color:transparent;
+       -fx-effect: dropshadow(three-pass-box, #3c3f41, 10.0,0, 0, 0);
+       -fx-font-size: 30px;
+       -fx-font-family: "宋体";
+}
+
+.text_pane {
+         -fx-font-size: 100px;
+         -fx-font-family: "Arial Black";
+         -fx-fill: #ffffff;
+         -fx-effect: innershadow( three-pass-box, rgba(0,0,0,0.7), 6, 0.0, 0 , 2 );
+}
+
+#score_pane {
+     -fx-background-image: url(file:res/image/child_score_background.png);
+     -fx-background-position:center center;
+     -fx-background-repeat:stretch;
+     -fx-background-color:transparent;
+}
+
+#black_score {
+      -fx-fill: #818181;
+}
+
+#white_score {
+        -fx-fill: #ffffff;
+        -fx-effect: dropshadow(three-pass-box, #000000, 20.0,0, 0, 0);
+}
+
+#timer {
+        -fx-font-size: 80px;
+        -fx-effect: dropshadow(three-pass-box, #000000, 20.0,0, 0, 0);
+}
+
+#timer_pane {
+     -fx-background-image: url(file:res/image/child_timer_background.png);
+     -fx-background-position:center center;
+     -fx-background-repeat:stretch;
+     -fx-background-color:transparent;
+}
+
+#chessBoard_pane {
+        -fx-background-color:rgba(255,255,255,0.3);
+}
+
+#white_chess {
+     -fx-background-image: url(file:res/image/child_white_chess.png);
+     -fx-background-position:center center;
+     -fx-background-repeat:stretch;
+     -fx-background-color:transparent;
+}
+
+#black_chess {
+     -fx-background-image: url(file:res/image/child_black_chess.png);
+     -fx-background-position:center center;
+     -fx-background-repeat:stretch;
+     -fx-background-color:transparent;
+}
+
+#play_one {
+      -fx-font-size: 30px;
+      -fx-fill: #818181;
+}
+
+#play_two {
+      -fx-font-size: 30px;
+      -fx-fill: #ffffff;
+      -fx-effect: dropshadow(three-pass-box, #000000, 20.0,0, 0, 0);
+}

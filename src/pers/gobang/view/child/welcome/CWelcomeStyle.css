@@ -1,0 +1,32 @@
+#child_pane {
+     -fx-background-image: url(file:res/image/child_background.png);
+     -fx-background-position:center center;
+     -fx-background-repeat:stretch;
+     -fx-background-color:transparent;
+}
+#child_Button_StartGame {
+      -fx-background-image: url(file:res/image/child_button_background.png);
+      -fx-background-position:center center;
+      -fx-background-repeat:stretch;
+      -fx-background-color:transparent;
+      -fx-font-size: 30px;
+      -fx-font-family: "宋体";
+}
+#child_Button_StartGame:hover {
+       -fx-background-image: url(file:res/image/child_button_background.png);
+       -fx-background-position:center center;
+       -fx-background-repeat:stretch;
+       -fx-background-color:transparent;
+       -fx-effect: dropshadow(three-pass-box, #72b9da, 10.0,0, 0, 0);
+       -fx-font-size: 30px;
+       -fx-font-family: "宋体";
+}
+#child_Button_StartGame:pressed {
+       -fx-background-image: url(file:res/image/child_button_background.png);
+       -fx-background-position:center center;
+       -fx-background-repeat:stretch;
+       -fx-background-color:transparent;
+       -fx-effect: dropshadow(three-pass-box, #3c3f41, 10.0,0, 0, 0);
+       -fx-font-size: 30px;
+       -fx-font-family: "宋体";
+}

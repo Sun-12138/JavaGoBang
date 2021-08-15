@@ -1,0 +1,60 @@
+#adult_pane {
+     -fx-background-image: url(file:res/image/adult_game_background.png);
+     -fx-background-position:center center;
+     -fx-background-repeat:stretch;
+     -fx-background-color:transparent;
+}
+.adult_button {
+      -fx-background-image: url(file:res/image/adult_button_background.png);
+      -fx-background-position:center center;
+      -fx-background-repeat:stretch;
+      -fx-background-color:transparent;
+      -fx-font-size: 30px;
+      -fx-font-family: "宋体";
+}
+.adult_button:hover {
+       -fx-background-image: url(file:res/image/adult_button_background.png);
+       -fx-background-position:center center;
+       -fx-background-repeat:stretch;
+       -fx-background-color:transparent;
+       -fx-effect: dropshadow(three-pass-box, #72b9da, 10.0,0, 0, 0);
+       -fx-font-size: 30px;
+       -fx-font-family: "宋体";
+}
+.adult_button:pressed {
+       -fx-background-image: url(file:res/image/adult_button_background.png);
+       -fx-background-position:center center;
+       -fx-background-repeat:stretch;
+       -fx-background-color:transparent;
+       -fx-effect: dropshadow(three-pass-box, #3c3f41, 10.0,0, 0, 0);
+       -fx-font-size: 30px;
+       -fx-font-family: "宋体";
+}
+
+.text_pane {
+         -fx-font-size: 100px;
+         -fx-font-family: "Arial Black";
+         -fx-fill: #ffffff;
+         -fx-effect: innershadow( three-pass-box, rgba(0,0,0,0.7), 6, 0.0, 0 , 2 );
+}
+
+#score_pane {
+     -fx-background-image: url(file:res/image/adult_score_background.png);
+     -fx-background-position:center center;
+     -fx-background-repeat:stretch;
+     -fx-background-color:transparent;
+}
+
+#black_score {
+      -fx-fill: #000000;
+}
+
+#white_score {
+        -fx-fill: #ffffff;
+        -fx-effect: dropshadow(three-pass-box, #000000, 20.0,0, 0, 0);
+}
+
+#timer {
+        -fx-font-size: 40px;
+        -fx-effect: dropshadow(three-pass-box, #000000, 20.0,0, 0, 0);
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<FlowPane fx:id="root_Pane" alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" vgap="5.0"
+          xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="pers.gobang.view.regist.RegistController">
+    <VBox>
+        <Text fx:id="text_Registered" text="Register"/>
+        <HBox>
+            <VBox.margin>
+                <Insets top="15.0"/>
+            </VBox.margin>
+            <Label fx:id="lab_Regist_Account" styleClass="regist_Text" text="账号:"/>
+            <TextField fx:id="textf_Regist_Account" promptText="请输入账号"/>
+        </HBox>
+        <HBox>
+            <VBox.margin>
+                <Insets top="15.0"/>
+            </VBox.margin>
+            <Label fx:id="lab_Regist_Password" styleClass="regist_Text" text="密码:"/>
+            <AnchorPane>
+                <PasswordField fx:id="passwordf_Regist_Password" promptText="请输入密码"/>
+                <TextField fx:id="textf_Regist_Password" layoutX="-10.0" promptText="请输入密码"
+                           visible="false" AnchorPane.leftAnchor="0.0"/>
+                <Button fx:id="regist_Button_isShow" alignment="CENTER_RIGHT" contentDisplay="RIGHT"
+                        mnemonicParsing="false" onAction="#regist_Button_isShow" prefHeight="25.0"
+                        prefWidth="25.0" AnchorPane.rightAnchor="0.0"/>
+            </AnchorPane>
+        </HBox>
+        <HBox>
+            <VBox.margin>
+                <Insets top="15.0"/>
+            </VBox.margin>
+            <Label fx:id="lab_Regist_Name" styleClass="regist_Text" text="姓名:"/>
+            <TextField fx:id="textf_Regist_name" promptText="请输入你的姓名"/>
+        </HBox>
+        <HBox>
+            <VBox.margin>
+                <Insets top="15.0"/>
+            </VBox.margin>
+            <Label fx:id="lab_Regist_Birthday" styleClass="regist_Text" text="生日:"/>
+            <DatePicker fx:id="Date_Regist_Birthday"/>
+        </HBox>
+        <HBox>
+            <VBox.margin>
+                <Insets top="15.0"/>
+            </VBox.margin>
+            <Label fx:id="lab_Regist_Sex" styleClass="regist_Text" text="性别:"/>
+            <ComboBox fx:id="regist_Comb_Sex"/>
+        </HBox>
+        <AnchorPane>
+            <VBox.margin>
+                <Insets top="30.0"/>
+            </VBox.margin>
+            <Button fx:id="regist_Button_Regist" alignment="CENTER" contentDisplay="CENTER"
+                    mnemonicParsing="false" onAction="#regist_Button_Regist" styleClass="regist_Button"
+                    text="注册" AnchorPane.leftAnchor="30.0"/>
+            <Button fx:id="regist_Button_Back" alignment="CENTER" contentDisplay="CENTER"
+                    mnemonicParsing="false" onAction="#regist_Button_Back" styleClass="regist_Button"
+                    text="返回" AnchorPane.rightAnchor="30.0"/>
+        </AnchorPane>
+    </VBox>
+</FlowPane>

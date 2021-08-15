@@ -1,0 +1,33 @@
+.root {
+     -fx-background-image: url(file:res/image/background.jpg);
+}
+
+#text_Registered {
+   -fx-font-size: 45px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.regist_Text {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.regist_Button {
+    -fx-text-fill: white;
+    -fx-font-family: "楷体";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.regist_Button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.regist_Button:pressed {
+    -fx-background-color: linear-gradient(#000000, #61a2b1);
+}

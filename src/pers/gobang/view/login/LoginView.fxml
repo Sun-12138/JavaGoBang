@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<FlowPane alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0"
+          vgap="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="pers.gobang.view.login.LoginController">
+    <VBox>
+        <Text fx:id="text_Welcome" text="Welcome"/>
+        <HBox>
+            <VBox.margin>
+                <Insets top="15.0"/>
+            </VBox.margin>
+            <Label fx:id="lab_Account" styleClass="login_Text" text="账号:"/>
+            <TextField fx:id="textf_Login_Account" promptText="请输入账号"/>
+        </HBox>
+        <HBox>
+            <VBox.margin>
+                <Insets top="15.0"/>
+            </VBox.margin>
+            <Label fx:id="lab_Login_Password" styleClass="login_Text" text="密码:"/>
+            <AnchorPane>
+                <PasswordField fx:id="passwordf_Login_Password" promptText="请输入密码"/>
+                <TextField fx:id="textf_Login_Password" promptText="请输入密码" visible="false"/>
+                <Button fx:id="login_Button_isShow" onAction="#login_Button_isShow"
+                        AnchorPane.rightAnchor="0.0"/>
+            </AnchorPane>
+        </HBox>
+        <AnchorPane>
+            <VBox.margin>
+                <Insets top="30.0"/>
+            </VBox.margin>
+            <Button fx:id="login_Button_Login" alignment="CENTER" contentDisplay="CENTER"
+                    mnemonicParsing="false" onAction="#login_Button_Login" styleClass="login_Button"
+                    text="登录" AnchorPane.leftAnchor="30.0"/>
+            <Button fx:id="login_Button_Regist" alignment="CENTER" contentDisplay="CENTER"
+                    mnemonicParsing="false" onAction="#login_Button_Regist" styleClass="login_Button"
+                    text="注册" AnchorPane.rightAnchor="30.0"/>
+        </AnchorPane>
+    </VBox>
+</FlowPane>
