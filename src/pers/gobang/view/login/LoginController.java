@@ -10,7 +10,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import pers.gobang.config.StaticResourcesConfig;
 import pers.gobang.method.*;
-import pers.gobang.viewalter.ViewAlter;
+import pers.gobang.ViewAlter;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -56,7 +56,6 @@ public class LoginController extends ViewAlter implements Initializable {
 				/*
 				 * 对密码进行SHA-256加密
 				 */
-				System.out.println("textf");
 				login_user_password = HashEncryption.sign(textf_Login_Password.getText(), type);
 			}
 		} catch (Exception e) {
@@ -89,7 +88,6 @@ public class LoginController extends ViewAlter implements Initializable {
 			messageDialog.showDialog("提示", "登录失败！！", "密码错误,请检查后重试", StaticResourcesConfig.ICON_IMAGE_PATH, null);
 			return;
 		}
-		System.out.println("登录成功");
 		/*
 		 * 将已登录用户的对象传给ViewAlter
 		 */

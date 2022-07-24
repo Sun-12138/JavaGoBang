@@ -53,6 +53,4 @@ public class StaticResourcesConfig {
     public final static String ADULT_GAME_BACKGROUND = "image/adult_game_background.png";
     public final static String ADULT_TIMER_BACKGROUND = "image/adult_timer_background.png";
     public final static String ADULT_SCORE_BACKGROUND = "image/adult_score_background.png";
-
-    public final static String CHESS_SOUND = "res/sound/chess_sound.mp3";
 }

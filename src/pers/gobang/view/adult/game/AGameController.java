@@ -15,7 +15,7 @@ import pers.gobang.method.AIChess;
 import pers.gobang.method.ChessBoard;
 import pers.gobang.method.Circle;
 import pers.gobang.method.MessageDialog;
-import pers.gobang.viewalter.ViewAlter;
+import pers.gobang.ViewAlter;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -320,13 +320,6 @@ public class AGameController extends ViewAlter implements Initializable {
 		}
 	}
 
-	@Override
-	public void stop() throws Exception {
-		super.stop();
-		switchTimer.setStop(true);
-	}
-
-
 }
 
 /**
@@ -335,7 +328,6 @@ public class AGameController extends ViewAlter implements Initializable {
 class SwitchTimer {
 	private boolean value = true;
 	private boolean isReset = false;
-	private boolean isStop = false;
 
 	public boolean getValue() {
 		return value;
@@ -353,13 +345,6 @@ class SwitchTimer {
 		isReset = reset;
 	}
 
-	public void setStop(boolean stop) {
-		isStop = stop;
-	}
-
-	public boolean getStop() {
-		return isStop;
-	}
 }
 
 /**
@@ -422,10 +407,6 @@ class TimerThread extends Thread {
 				time = String.format("%02d", a) + ":" + String.format("%02d", b);
 				timer_Text.setText(time);
 				switchTimer.setReset(false);
-			}
-
-			if (switchTimer.getStop()) {
-				break;
 			}
 		}
 	}

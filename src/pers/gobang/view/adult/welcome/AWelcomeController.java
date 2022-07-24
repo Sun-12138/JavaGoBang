@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import pers.gobang.viewalter.ViewAlter;
+import pers.gobang.ViewAlter;
 
 import java.net.URL;
 import java.util.ResourceBundle;

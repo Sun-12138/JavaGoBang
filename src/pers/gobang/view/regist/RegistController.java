@@ -10,7 +10,7 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.text.Text;
 import pers.gobang.config.StaticResourcesConfig;
 import pers.gobang.method.*;
-import pers.gobang.viewalter.ViewAlter;
+import pers.gobang.ViewAlter;
 
 import java.io.File;
 import java.io.FileNotFoundException;
